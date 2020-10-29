@@ -94,6 +94,7 @@ if st.button("Regression"):
     else:
         p="Please use XGBoost as all other regression techniques are not good enough and XGBoost yeilds the best results for your data"
         st.write('Use XGBoost for regression')
+    language="en"
     output=gTTS(text=p,lang=language,slow=False)
     output.save("voice.ogg")
     audio_file = open('voice.ogg', 'rb')
@@ -241,6 +242,7 @@ if st.button("Classification"):
     else:
         q="Please use XGBoost as all other classification techniques are not good enough and XGBoost yeilds the best results for your data"
         st.write('Use XGBoost for Classification')
+    language="en"
     output=gTTS(text=q,lang=language,slow=False)
     output.save("voice.ogg")
     audio_file = open('voice.ogg', 'rb')
